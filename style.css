@@ -194,6 +194,9 @@ header .icons #menu-bars{
     .home .home-slider .slide .content h3{
         font-size: 5rem;
     }
+        
+
+
 }
 
 @media (max-width:450px){
@@ -208,6 +211,17 @@ header .icons #menu-bars{
 
     .invest form .inputBox .input{
         width: 100%;
+    }
+
+    .invest form .inputBox .input input{
+        
+        width: 50%;
+        border: 1px solid rgba(0,0,0,1);
+    }
+    .invest form{
+        width: 100%;
+        
+    
     }
 }
 
@@ -606,20 +620,22 @@ header .icons #menu-bars{
     border: 1rem solid rgba(0,0,0,.2);
     background: #fff;
     padding: 1.5rem;
-    margin: 0 auto
+    margin: 0 auto;
+    
 
 }
 
 .invest form .inputBox{
-    display: grid;
-    
+    display: flex;        
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
-    gap: .5rem;
+    flex-wrap: wrap;
+       
 }
 
 .invest form .inputBox .input{
-    width: 100%;
+    width: 49%;
+    gap: 0.5rem;
+    
 }
 
 .invest form .inputBox .input span{
@@ -636,8 +652,9 @@ header .icons #menu-bars{
     font-size: 1.6rem;
     color: var(--black);
     text-transform: none;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
     width: 100%;
+    border: 2px solid rgba(0,0,0,1);
 }
 
 .invest form .inputBox .input input:focus{
