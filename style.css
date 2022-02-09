@@ -215,14 +215,10 @@ header .icons #menu-bars{
 
     .invest form .inputBox .input input{
         
-        width: 50%;
+        width: 100%;
         border: 1px solid rgba(0,0,0,1);
     }
-    .invest form{
-        width: 100%;
-        
     
-    }
 }
 
 #search-form{
