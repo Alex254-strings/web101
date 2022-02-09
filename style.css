@@ -264,13 +264,32 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
+.home{
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.home h1{
+    text-align: center;
+}
+
+.home .home-button a{
+    align-items: center;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
 .home .home-slider .slide{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding-left: 40%;
     gap: 1rem;
-    padding-top: 9rem;
+    padding-top: 8rem;
 }
 
 .home .home-slider .slide .content{
@@ -311,6 +330,10 @@ header .icons #menu-bars{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
+}
+
+.cyrptos h3{
+    padding-top: 10rem;
 }
 
 .cyrptos .box-container .box{
@@ -366,6 +389,7 @@ header .icons #menu-bars{
 .cyrptos .box-container .box h3{
     color: var(--black);
     font-size: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 .cyrptos .box-container .box .stars{
@@ -685,3 +709,36 @@ header .icons #menu-bars{
     top: 110%;
     opacity: 0;
 }
+
+.home-button .btn--primary{
+        border-radius: 7rem;
+        border: 1px solid rgba(0,0,0,1);
+        font-size: 2.8rem;
+        font-weight: 50;
+        margin: 1.5rem 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+        cursor: pointer;
+        background: #fff;
+        color: #192a56;
+    
+        
+    }
+
+    .home-button .btn--primary:hover{
+        background: dodgerblue;
+        color: white;
+        
+    }
+
+    .home-button .btn--block{
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        
+    }
+    .home-button .btn{
+        align-items: center;
+    }
