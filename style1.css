@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.errer{
+    border: 2px solid rgb(17, 16, 16);
+    padding-top: 3rem;    
+    align-items: center;
+    display: block;
+    background: rgb(142, 172, 206);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5rem;
+    width: 60%;
+    height: 300px;
+
+}
+
+.errer p{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.errer .err-button{
+    padding-top: 2rem;
+}
+
+.errer .err-button a{
+    align-items: center;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 0;
+    color: #fff;
+    
+    
+}
+.errer .btn--primary {
+    width: 40%;
+    text-align: center; 
+    
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-left: 30%; 
+    margin-right: 30%;    
+}
+
+
+.tabs-swap{
+    width: 40%;
+    height: 450px;
+    position: relative;
+    margin: 100px auto;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.tabs-swap .btn-box{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tabs-swap .btn-box button:hover{
+    border: 1px solid rgb(230, 226, 226);
+}
+
+.tabs-swap .btn-box button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-left: 50px;
+    font-size: 1.0rem;
+    font-weight: 0;
+    
+}
+.content{
+    padding-top: 2rem;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    margin: 5% auto;
+    align-items: center;
+    position: absolute;
+    transform: translateX(100%);  
+    
+}
+#content1{
+    transform: translateX(0px);   
+    
+}
+.tabs-swap .content input{
+    width: 90%;
+    height: 2.5rem;
+}
+
+.tabs-swap .content p{
+    padding-top: 2rem;
+    font-style: normal;
+    font-size: small;
+    font-size: 1.0rem;
+    
+}
+.tabs-swap .content a{   
+    text-decoration: none;    
+    font-size: 1.2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: Arial, Helvetica, sans-serif;
+    color: #fff;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;  
+
+}
+
+.tabs-swap .content .home-btn{
+    
+    width: 90%;
+    text-align: center;   
+    
+}
+.tabs-swap .content .home-btn:hover{
+    background: rgb(74, 112, 3);
+    color: black;
+    font-weight: bold;
+    
+}
+
+.tabs-swap .content .home-btn a:hover{
+    color: black;
+    
+
+}
+.tabs-swap .content .btn--primary{
+    
+    border-radius: 0.2rem;
+    text-align: center;    
+    font-weight: 50;
+    margin: 1.5rem 0;    
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    background: rgb(116, 45, 248);
+    color: #fff;
+
+    
+}
+
+@media (max-width:991px){
+    .tabs-swap{
+        width: 60%;
+        height: 450px;
+    }
+}
+
+@media (max-width:768px){
+    .tabs-swap{
+        width: 80%;
+        height: 450px;
+    }
+}
+
+@media (max-width:370px){
+    .tabs-swap{
+        width: 100%;
+        height: 450px;
+        display: block;
+    }
+}

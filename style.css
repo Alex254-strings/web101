@@ -31,7 +31,7 @@ section{
 }
 
 section:nth-child(even){
-    background: #eee;
+    background: #fff;
 }
 
 .sub-heading{
@@ -132,14 +132,6 @@ header .icons #menu-bars{
 
 
 
-
-
-
-
-
-
-
-
 /*.............@media------------*/
 
 @media (max-width:991px){
@@ -194,6 +186,15 @@ header .icons #menu-bars{
     .home .home-slider .slide .content h3{
         font-size: 5rem;
     }
+    .home .image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .home {
+        width: 100%;
+        height: auto;
+    }
         
 
 
@@ -216,6 +217,21 @@ header .icons #menu-bars{
     .invest form .inputBox{
         width: 100%;
     } 
+
+    .home .image a{
+        width: 100%;
+        height: 100%;
+        height: 10rem;
+    }
+    .home{
+        width: 100%;
+        height: auto;
+    }
+
+    .home a{
+        height: 5rem;
+        
+    }
     
 }
 
@@ -275,14 +291,32 @@ header .icons #menu-bars{
 .home{
     width: 100%;
     height: auto;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-left: 20%;
     padding-right: 20%;
+    align-items: center;
 }
 
 .home h1{
-    text-align: center;
+    color: var(--green);
+    font-size: 3rem;  
+    text-align: center;   
 }
+
+.home h3{
+
+    color: var(--light-color);
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 1;
+}
+
+
+
+.home .image img{
+    width: 100%;
+    padding-top: 2rem;
+} 
 
 .home .home-button a{
     align-items: center;
@@ -348,11 +382,17 @@ header .icons #menu-bars{
     padding: 2.5 rem;
     background: #fff;
     border-radius: .5rem;
-    border: 1rem solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0,0,0,.2);
     box-shadow: var(--box-shadow);
     position: relative;
     overflow: hidden;
     text-align: center;
+    
+}
+
+.cyrptos .box-container .box:hover{
+    content: attr(title);
+    
 }
 
 .cyrptos .box-container .box .fa-heart:hover,
@@ -393,6 +433,7 @@ header .icons #menu-bars{
     height: 17rem;
     margin: 1rem 0;
 }
+
 
 .cyrptos .box-container .box h3{
     color: var(--black);
@@ -659,10 +700,16 @@ header .icons #menu-bars{
     margin-top: 0;
 }
 
+.footer{
+    width: 100%;
+}
+
 .footer .mybox-container{
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
+    background: #27ae60;
+    color: #fff;
         
 }
 
@@ -676,11 +723,11 @@ header .icons #menu-bars{
     display: block;
     padding: .5rem 0;
     font-size: 1.5rem;
-    color: var(--light-color);
+    color: #fff;
 }
 
 .footer .mybox-container .box a:hover{
-    color: var(--green);
+    color: var(--black);
     text-decoration: underline;
 }
 
@@ -722,7 +769,7 @@ header .icons #menu-bars{
 }
 
 .home-button .btn--primary{
-        border-radius: 7rem;
+        border-radius: 5rem;
         border: 1px solid rgba(0,0,0,1);
         font-size: 2.8rem;
         font-weight: 50;
@@ -753,3 +800,5 @@ header .icons #menu-bars{
     .home-button .btn{
         align-items: center;
     }
+
+    
