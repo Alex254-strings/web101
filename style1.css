@@ -100,47 +100,17 @@
     height: 2.5rem;
 }
 
-.tabs-swap .content p{
-    padding-top: 2rem;
-    font-style: normal;
-    font-size: small;
+.tabs-swap .content form .inputSec p{
+    padding-top: 3rem; 
+    font-weight: 2;   
     font-size: 1.0rem;
     
 }
-.tabs-swap .content a{   
-    text-decoration: none;    
-    font-size: 1.2rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    font-size: Arial, Helvetica, sans-serif;
-    color: #fff;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: block;  
 
-}
-
-.tabs-swap .content .home-btn{
+.tabs-swap .content form .inputSec .btn{
     
     width: 90%;
-    text-align: center;   
-    
-}
-.tabs-swap .content .home-btn:hover{
-    background: rgb(74, 112, 3);
-    color: black;
-    font-weight: bold;
-    
-}
-
-.tabs-swap .content .home-btn a:hover{
-    color: black;
-    
-
-}
-.tabs-swap .content .btn--primary{
-    
+    text-align: center;
     border-radius: 0.2rem;
     text-align: center;    
     font-weight: 50;
@@ -149,11 +119,36 @@
     white-space: nowrap;
     cursor: pointer;
     background: rgb(116, 45, 248);
-    color: #fff;
+    color: #fff;   
+    
+}
+.tabs-swap .content form .inputSec .btn:hover{
+    background: rgb(74, 112, 3);
+    color: black;
+    font-weight: bold;    
+}
+
+.tabs-swap .content .home-btn a:hover{
+    color: black;   
+
+}
+
+.successs{
+    width: 100%;    
+    background: white;
+    padding-left: 30%;
 
     
 }
 
+.successs.image img{
+    display: block;
+    align-items: center;
+    padding-top: 0rem;
+    
+
+} 
+    
 @media (max-width:991px){
     .tabs-swap{
         width: 60%;
