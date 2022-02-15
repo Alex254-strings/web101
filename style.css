@@ -310,9 +310,6 @@ header .icons #menu-bars{
     text-align: center;
     font-weight: 1;
 }
-
-
-
 .home .image img{
     width: 100%;
     padding-top: 2rem;
@@ -522,29 +519,39 @@ header .icons #menu-bars{
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 1.5rem;
+    gap: 1.3rem;  
+    
 }
 
 .menu .box-container .box{
     background: #fff;
-    border: 1rem solid rgba(0,0,0,.2);
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    border: .1rem solid #ccc;
+    border-radius: 1.5rem;
+    box-shadow: var(--black);
+    
 }
 
 .menu .box-container .box .image{
-    height: 25rem;
-    width: 100%;
+    
+    width: 120%;
     padding: 1.5rem;
     overflow: hidden;
     position: relative;
+    align-items: center;
+    padding-left: 2rem;
 }
 
 .menu .box-container .box .image img{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 72%;
     border-radius: .5rem;
     object-fit: cover;
+    align-items: center;
+    
+}
+
+.menu .box-container .box .image a{
+    align-items: center;
 }
 
 .menu .box-container .box .image .fa-heart{
@@ -578,17 +585,12 @@ header .icons #menu-bars{
     color: var(--green);
 }
 
-.menu .box-container .box .content h3{
+.menu .box-container .box h3{
     color: var(--black);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-.menu .box-container .box .content p{
-    color: var(--light-color);
-    font-size: 1.6rem;
-    padding: .5rem 0;
-    line-height: 1.5;
-}
 
 .menu .box-container .box .content .price{
     color: var(--green);
@@ -705,9 +707,7 @@ header .icons #menu-bars{
 }
 
 .footer .mybox-container{
-    display: grid;    
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+    display: block;   
     background: #27ae60;
     color: #fff;
         
@@ -717,6 +717,7 @@ header .icons #menu-bars{
     padding: .5rem 0;
     font-size: 2.5rem;
     color: var(--black);
+    text-align: center;
     
 }
 .footer .mybox-container .box a{
@@ -724,6 +725,7 @@ header .icons #menu-bars{
     padding: .5rem 0;
     font-size: 1.5rem;
     color: #fff;
+    text-align: center;
 }
 
 .footer .mybox-container .box a:hover{
@@ -732,7 +734,7 @@ header .icons #menu-bars{
 }
 
 .footer .credit{
-    text-align: left;
+    text-align: center;
     border-top: .1rem solid rgba(0,0,0,.2);
     font-size: 2rem;
     color: var(--black);

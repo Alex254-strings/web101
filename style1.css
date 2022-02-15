@@ -5,7 +5,7 @@
 }
 
 .errer{
-    border: 2px solid rgb(17, 16, 16);
+    
     padding-top: 3rem;    
     align-items: center;
     display: block;
@@ -67,6 +67,10 @@
 
 .tabs-swap .btn-box button:hover{
     border: 1px solid rgb(230, 226, 226);
+    border-radius: 5rem;
+    color: blue;
+    background: rgb(2, 97, 240);
+    
 }
 
 .tabs-swap .btn-box button{
@@ -129,7 +133,9 @@
 }
 
 .tabs-swap .content .home-btn a:hover{
-    color: black;   
+    color: black; 
+    word-spacing: 2.5rem; 
+    background: rgb(3, 86, 241); 
 
 }
 
