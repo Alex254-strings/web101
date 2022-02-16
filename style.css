@@ -518,7 +518,7 @@ header .icons #menu-bars{
 
 .menu .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: 100px repeat(auto-fill, 100px) 100px;
     gap: 1.3rem;  
     
 }
@@ -527,13 +527,14 @@ header .icons #menu-bars{
     background: #fff;
     border: .1rem solid #ccc;
     border-radius: 1.5rem;
-    box-shadow: var(--black);
+    box-shadow: 10px 10px 5px #aaaaaa;    
+    width: 100%;
     
 }
 
 .menu .box-container .box .image{
     
-    width: 120%;
+    width: 100%;
     padding: 1.5rem;
     overflow: hidden;
     position: relative;
@@ -542,7 +543,7 @@ header .icons #menu-bars{
 }
 
 .menu .box-container .box .image img{
-    height: auto;
+    height: 50%;
     width: 72%;
     border-radius: .5rem;
     object-fit: cover;
@@ -552,6 +553,7 @@ header .icons #menu-bars{
 
 .menu .box-container .box .image a{
     align-items: center;
+    width: 50%;
 }
 
 .menu .box-container .box .image .fa-heart{
