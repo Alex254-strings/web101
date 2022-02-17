@@ -519,15 +519,18 @@ header .icons #menu-bars{
 .menu .box-container{
     display: grid;
     grid-template-columns: 100px repeat(auto-fill, 100px) 100px;
-    gap: 1.3rem;  
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-between;
+    gap: .7rem;
     
 }
 
 .menu .box-container .box{
     background: #fff;
-    border: .1rem solid #ccc;
+    border: .1rem solid rgb(245, 244, 244);
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 5px #aaaaaa;    
+    box-shadow: 10px 10px 5px #f3f1f1;    
     width: 100%;
     
 }
